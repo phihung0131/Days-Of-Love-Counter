@@ -17,7 +17,7 @@
   flex-direction: column;
   justify-content: flex-start; /* Changed to flex-start */
   align-items: center;
-  color: white;
+  color: rgb(241, 241, 241);
   text-align: center;
   padding: 20px;
   position: relative;
@@ -34,22 +34,22 @@
 .counter {
   font-size: 7rem; /* Use rem for scalability */
   font-weight: bold;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Add text shadow */
+  text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5); /* Add text shadow */
 }
 
 /* Subtitle styling */
 .subtitle {
   font-size: 2rem;
   margin-bottom: 20px; /* Add some space between elements */
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Add text shadow */
+  text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5); /* Add text shadow */
 }
 
 /* Dates styling */
 .dates {
   font-size: 1.5rem;
   margin-bottom: 0px;
-  color: #f8cd33;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Add text shadow */
+  color: #f83333;
+  text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5); /* Add text shadow */
 }
 
 /* Responsive styling for larger screens */
