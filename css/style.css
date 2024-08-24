@@ -17,7 +17,7 @@
   flex-direction: column;
   justify-content: flex-start; /* Changed to flex-start */
   align-items: center;
-  color: rgb(241, 241, 241);
+  color: #f2ff7d;
   text-align: center;
   padding: 20px;
   position: relative;
