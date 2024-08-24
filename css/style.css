@@ -1,0 +1,90 @@
+/* Apply box-sizing and general styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Rowdies", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Container styling */
+.container {
+  height: 100vh; /* Use viewport height for full screen */
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Changed to flex-start */
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+/* Content wrapper */
+.content-wrapper {
+  position: relative;
+  top: 5%; /* Start content from 10% from the top */
+  width: 100%;
+}
+
+/* Counter styling */
+.counter {
+  font-size: 7rem; /* Use rem for scalability */
+  font-weight: bold;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+
+/* Subtitle styling */
+.subtitle {
+  font-size: 2rem;
+  margin-bottom: 20px; /* Add some space between elements */
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+
+/* Dates styling */
+.dates {
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+  color: #f8cd33;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+
+/* Responsive styling for larger screens */
+@media (min-width: 768px) {
+  .container {
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+  }
+
+  .counter {
+    font-size: 8rem;
+  }
+
+  .subtitle {
+    font-size: 4rem;
+  }
+
+  .dates {
+    font-size: 2rem;
+  }
+}
+
+/* Responsive styling for extra-large screens */
+@media (min-width: 1200px) {
+  .counter {
+    font-size: 16rem;
+  }
+
+  .subtitle {
+    font-size: 10rem;
+  }
+
+  .dates {
+    font-size: 5rem;
+  }
+}
