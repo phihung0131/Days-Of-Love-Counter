@@ -17,7 +17,7 @@
   flex-direction: column;
   justify-content: flex-start; /* Changed to flex-start */
   align-items: center;
-  color: #f2ff7d;
+  color: #b6ffd9;
   text-align: center;
   padding: 20px;
   position: relative;
@@ -48,7 +48,7 @@
 .dates {
   font-size: 1.5rem;
   margin-bottom: 0px;
-  color: #f83333;
+  color: #fa9595;
   text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5); /* Add text shadow */
 }
 
