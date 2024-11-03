@@ -23,11 +23,24 @@
   position: relative;
 }
 
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
 /* Content wrapper */
 .content-wrapper {
   position: relative;
   top: 5%; /* Start content from 10% from the top */
   width: 100%;
+  animation: fadeIn 1s ease-out;
+  z-index: 2;
 }
 
 /* Counter styling */
@@ -35,6 +48,12 @@
   font-size: 7rem; /* Use rem for scalability */
   font-weight: bold;
   text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5); /* Add text shadow */
+  transition: all 0.3s ease-in-out;
+}
+
+.counter:hover {
+  transform: scale(1.05);
+  color: #d4ffeb;
 }
 
 /* Subtitle styling */
@@ -42,6 +61,7 @@
   font-size: 2rem;
   margin-bottom: 20px; /* Add some space between elements */
   text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5); /* Add text shadow */
+  transition: all 0.3s ease-in-out;
 }
 
 /* Dates styling */
@@ -50,6 +70,7 @@
   margin-bottom: 0px;
   color: #fa9595;
   text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5); /* Add text shadow */
+  transition: all 0.3s ease-in-out;
 }
 
 /* Responsive styling for larger screens */
@@ -87,4 +108,9 @@
   .dates {
     font-size: 5rem;
   }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
